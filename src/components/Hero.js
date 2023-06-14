@@ -6,7 +6,7 @@ const Hero = () => {
     if (!isLoaded || !isSignedIn) {
       return null
     }
-    return (<div>{user.firstName}</div>)
+    return (<div className='text-lg font-medium text-accent-focus pl-1'>{ user.fullName}</div>)
   }
   
   export default Hero

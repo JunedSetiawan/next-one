@@ -1,9 +1,9 @@
-import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
 import { ClerkProvider} from "@clerk/nextjs";
-import ThemeToggle from '@/components/ThemeToggle';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +18,10 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="dracula">
       <body className={inter.className}>
       <main className="flex min-h-screen flex-col items-center justify-between p-5">
-        <Navbar />
-        {children}
-      </main>
+    <Navbar />
+    {children}
+    <Footer/>
+  </main>
         </body>
     </html>
     </ClerkProvider>
