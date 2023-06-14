@@ -12,6 +12,7 @@ const Page = () => {
   </button></div>;
     return (
       <div className="overflow-x-auto">
+        
     <table className="table overflow-x">
       {/* head */}
       <thead>
