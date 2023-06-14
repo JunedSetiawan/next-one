@@ -29,7 +29,7 @@ const page = () => {
     </thead>
     <tbody>
     {data.map((item,key) => (
-      <tr>
+      <tr key={item.id}>
         <th>
           {key+1}
         </th>
